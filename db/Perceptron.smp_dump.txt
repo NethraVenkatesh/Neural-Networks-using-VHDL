@@ -1,0 +1,6 @@
+
+State Machine - |fp_multiplication|state
+Name state.output state.multiplication state.init 
+state.init 0 0 0 
+state.multiplication 0 1 1 
+state.output 1 0 1 
