@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/OR_2.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/AND_2.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/NOT_1.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/Perceptron.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/EIGHT_BIT_ADDER.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/FULL_ADDER.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/HALF_ADDER.vhd}
+vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/XOR_2.vhd}
+

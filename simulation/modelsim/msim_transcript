@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do Perceptron_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/Perceptron.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:46 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/nethr/Desktop/Perceptron/Perceptron.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package Perceptron
+# End time: 18:12:46 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/nethr/Desktop/Perceptron/trial.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:46 on Jul 11,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/nethr/Desktop/Perceptron/trial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Perceptron
+# -- Compiling entity trial
+# -- Compiling architecture behavioral of trial
+# End time: 18:12:46 on Jul 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.trial
+# vsim work.trial 
+# Start time: 18:13:15 on Jul 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.perceptron
+# Loading work.trial(behavioral)
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 0 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position insertpoint  \
+sim:/trial/A \
+sim:/trial/B \
+sim:/trial/multi \
+sim:/trial/temp
+force -freeze sim:/trial/A 11000000000000000000000 0
+force -freeze sim:/trial/B 11010000000000000000000 0
+run
+run
+run
+run
+run
+run
+run
+# End time: 18:21:50 on Jul 11,2023, Elapsed time: 0:08:35
+# Errors: 0, Warnings: 0

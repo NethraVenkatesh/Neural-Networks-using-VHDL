@@ -1,0 +1,79 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/nethr/Desktop/Perceptron/simulation/modelsim
+Pperceptron
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+w1683974040
+R0
+8C:/Users/nethr/Desktop/Perceptron/Perceptron.vhd
+FC:/Users/nethr/Desktop/Perceptron/Perceptron.vhd
+l0
+L5 1
+V2nG7OUFT=PlaQ?_;_9ZmY2
+!s100 QezIdEG9`aY4B;XfVSX6A0
+Z4 OV;C;2020.1;71
+31
+Z5 !s110 1689079366
+!i10b 1
+Z6 !s108 1689079366.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/nethr/Desktop/Perceptron/Perceptron.vhd|
+!s107 C:/Users/nethr/Desktop/Perceptron/Perceptron.vhd|
+!i113 1
+Z7 o-93 -work work
+Z8 tExplicit 1 CvgOpt 0
+Etrial
+Z9 w1689079301
+Z10 DPx4 work 10 perceptron 0 22 2nG7OUFT=PlaQ?_;_9ZmY2
+R1
+R2
+R3
+!i122 1
+R0
+Z11 8C:/Users/nethr/Desktop/Perceptron/trial.vhd
+Z12 FC:/Users/nethr/Desktop/Perceptron/trial.vhd
+l0
+L6 1
+VO;mYQEAbocVGKLz1S[bQa0
+!s100 O^DBdjjDcTFaElC?lYiXK0
+R4
+31
+R5
+!i10b 1
+R6
+Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/nethr/Desktop/Perceptron/trial.vhd|
+!s107 C:/Users/nethr/Desktop/Perceptron/trial.vhd|
+!i113 1
+R7
+R8
+Abehavioral
+R10
+R1
+R2
+R3
+DEx4 work 5 trial 0 22 O;mYQEAbocVGKLz1S[bQa0
+!i122 1
+l14
+L11 9
+V?WTOL`WBUXRLmHC99<jiN3
+!s100 DzOl2WQKa;h6WImT5U;az1
+R4
+31
+R5
+!i10b 1
+R6
+R13
+Z14 !s107 C:/Users/nethr/Desktop/Perceptron/trial.vhd|
+!i113 1
+R7
+R8
