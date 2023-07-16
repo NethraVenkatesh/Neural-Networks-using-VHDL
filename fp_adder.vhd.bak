@@ -1,0 +1,61 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use ieee.numeric_std.ALL;
+use work.perceptron.all;
+
+entity fp_adder is
+	port( A, B : in std_logic_vector(31 downto 0); --32 bit input floating point
+			clk : in std_logic;
+			reset : in std_logic;
+			start  : in std_logic;
+			done  : in std_logic;
+			sum : OUT std_logic_vector(31 downto 0)); --32 bit output floating point
+end fp_adder;
+
+architecture behavioral of fp_adder is
+
+	--fsm approach
+	type state_type is (init, align, addition, normalize, output); --five finite state
+	signal state: state_type := init; -- a signal which dtermines the state
+	
+	--intermediate signal for A & B & ouput_sum
+	signal A_mantissa, B_mantissa, sum_mantissa : std_logic_vector(22 downto 0);
+	signal A_exp, B_exp, sum_exp : std_logic_vector(7 downto 0);
+	signal A_sign, B_sign, sum_sign : std_logic;
+	
+	begin
+		if(reset = '1') then
+			state <= init;
+			done <= '0';
+		elsif rising_edge(clk) then
+		case state =>
+			when init =>
+				if (start = '1') then
+					A_sign <= A(31);
+					A_exp <= A(30 downto 23);
+					A_mantissa <= A(22 downto 0);
+					
+					B_sign <= A(31);
+					B_exp <= A(30 downto 23);
+					B_mantissa <= A(22 downto 0);
+					
+					state <= align;
+				else
+					state <= inti;
+				end if;
+			
+			when align =>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	
+end architecture;

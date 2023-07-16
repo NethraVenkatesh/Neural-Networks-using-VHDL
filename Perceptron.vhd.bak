@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package  Perceptron is
+
+component AND_2 is
+	port(I0, I1 : in std_logic;
+			O0 : out std_logic);
+end component;
+
+component OR_2 is
+	port(I0, I1 : in std_logic;
+			O0 : out std_logic);
+end component;
+
+component NOT_1 is
+	port(I0 : in std_logic;
+			O0 : out std_logic);
+end component;
+
+component XOR_2 is
+	port(I0, I1 : in std_logic;
+			O0 : out std_logic);
+end component;
+
+component HALF_ADDER is
+	port(A, B : in std_logic;
+			S, C : out std_logic);
+end component;
+
+component FULL_ADDER is
+	port(A, B, CIN : in std_logic;
+			S, COUT : out std_logic);
+end component;
+
+component EIGHT_BIT_ADDER is
+	port(A, B: in std_logic_vector(3 downto 0);
+			cin : std_logic;
+		  sUM : out std_logic_vector(4 downto 0));
+end component;
